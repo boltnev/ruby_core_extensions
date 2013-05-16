@@ -1,5 +1,5 @@
 #coding: utf-8
-require File.dirname(__FILE__) + '/../lib/core_extensions'
+require File.dirname(__FILE__) + '/../lib/little_sugar'
 
 describe Array do
 
