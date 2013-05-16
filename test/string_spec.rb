@@ -1,5 +1,5 @@
 #coding: utf-8
-require '../lib/core_extensions'
+require File.dirname(__FILE__) + '/../lib/core_extensions'
 
 describe String, "#utf8" do
 
@@ -18,4 +18,13 @@ describe String, "#utf8" do
     word.upcase_utf8.should eq("СЪЕШЬ ЕЩЁ ЭТИХ МЯГКИХ ФРАНЦУЗСКИХ БУЛОК, ДА ВЫПЕЙ ЖЕ ЧАЮ.")
   
   end
+  
+  it "should capitalize russian letters" do
+  
+    word = "съешь ещё этих мягких французских булок, да выпей же чаю." 
+   
+    word.capitalize_utf8.should eq("Съешь ещё этих мягких французских булок, да выпей же чаю.")
+  
+  end
+ 
 end 
