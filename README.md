@@ -18,3 +18,18 @@ usage:
     
     ##
     
+    arr = ["a", "abca", "abcbc", "sd", "qwe"]
+
+    arr.sort_by(&:length) # => ["a", "sd", "qwe", "abca", "abcbc"]
+
+    arr.sort_by(&:ord) # => ["a", "abca", "abcbc", "qwe", "sd"]
+  
+    arr.uniq_by(&:ord) # => ["a", "sd", "qwe"]
+    
+    arr.mix # => mixed arr
+    
+    ##
+    
+    if obj.not_nil?
+        #do something
+    end
